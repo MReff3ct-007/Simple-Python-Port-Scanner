@@ -1,4 +1,4 @@
-Fast Python Port Scanner
+Python Port Scanner
 
 This is a small Python script that scans an IP address or website
 to see which TCP ports are open.
