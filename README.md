@@ -1,25 +1,16 @@
-# Simple Python Port Scanner
+Fast Python Port Scanner
 
-This project is a basic port scanner written in Python 3. It scans a target IP
-address or website for open TCP ports and displays any that are found.
+This is a small Python script that scans an IP address or website
+to see which TCP ports are open.
 
-## Modules Used
+Modules used:
+- socket – used to connect to ports
+- sys – used to exit the program
+- re – used to check if the input is valid
+- datetime – used to show scan time
+- concurrent.futures – used to scan ports faster using threads
 
-This script only uses built-in Python modules:
-
-- `socket` – used to create network connections and scan ports
-- `sys` – used for exiting the program safely
-- `re` – used to check if the input is a valid IP address or hostname
-- `datetime` – used to show when the scan starts and ends
-
-## Notes
-
-- No external libraries are required
-- Works with Python 3
-- Made for learning and basic security testing
-
-## Run
-
-```bash
-python3 run.py
-
+About:
+The script connects to each port and checks if it is open.
+It uses multiple threads so the scan does not take too long.
+This was made for learning and basic security testing.
